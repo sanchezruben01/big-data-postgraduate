@@ -4,13 +4,31 @@ Preparado por el PhD Esteban Hernández, CyberColombia.
 
 **64 horas efectivas de clase en línea**, del **2 de octubre al 7 de noviembre de 2026**. Doce encuentros en seis fines de semana. Los recesos y almuerzos se excluyen; el trabajo autónomo no integra el cómputo.
 
-[Programa](docs/programa.md) · [Calendario contractual](docs/calendario.md) · [Guía por sesiones](docs/agenda.md) · [Metodología](docs/metodologia.md) · [Datasets](docs/datasets.md) · [Entorno y descargas](docs/entorno.md) · [Controles docentes](docs/controles-docente.md)
+[Programa](docs/programa.md) · [Calendario contractual](docs/calendario.md) · [Guía por sesiones](docs/agenda.md) · [Metodología](docs/metodologia.md) · [Datasets](docs/datasets.md) · [Entorno y descargas](docs/entorno.md) · [Controles docentes](docs/controles-docente.md) · [Guías complementarias](#guías-complementarias)
 
 El curso emplea dos dominios abiertos: PQRS/PQRD de Supersalud y datos agroambientales de suelo, territorio, rendimiento agrícola y clima. Los dominios conservan sus unidades; no se unen filas de reportes de salud con muestras de suelo.
 
 ## Preparar el equipo
 
-Seguir la [guía Windows → WSL 2 → Ubuntu-26.04](docs/instalacion-wsl.md): listar distribuciones, instalar Ubuntu-26.04, entrar a `/mnt/c/Users/TUPTC/bigdata`, clonar el repositorio y preparar Python 3.12, Java, Jupyter y las bibliotecas dentro de Ubuntu. Esta es la base de todas las instrucciones vigentes de instalación.
+Antes de los talleres, preparar el ambiente siguiendo la guía del sistema operativo. Ambas preparan Git, Python 3.12, un `.venv` base CPU, JDK Java 21, Spark, Jupyter y las bibliotecas fijadas del curso:
+
+- [Windows: WSL 2 con Ubuntu-26.04](docs/instalacion-wsl.md).
+- [Linux: instalación nativa](docs/instalacion-linux-macos.md#linux), con paquetes para Ubuntu/Debian y Fedora.
+- [macOS: Apple Silicon M1, M2, M3, M4 e Intel](docs/instalacion-linux-macos.md#macos), con Homebrew y `brew install --cask temurin@21` para instalar el JDK 21 en ambas arquitecturas.
+
+- [Entornos virtuales por plataforma](docs/entornos-virtuales.md): creación, activación, kernels y alternativa Windows nativa para las guías rápidas.
+- [Polars con GPU NVIDIA, instalación opcional independiente](docs/polars-gpu.md): prerrequisitos del sistema, CUDA y entorno GPU. No forma parte de la instalación base.
+
+### Instrucciones generales de preparación
+
+1. **Revisar el equipo:** identificar sistema operativo y arquitectura, disponer de conexión a Internet y permisos de administrador para instalar herramientas. Planificar 16 GB de RAM y 20 GB libres; con 8 GB, comenzar con muestras y Spark `local[2]`.
+2. **Elegir dónde ejecutar:** en Windows, instalar WSL 2 y trabajar dentro de Ubuntu; en Linux y macOS, usar la terminal nativa. Los comandos PowerShell de la guía WSL se ejecutan en Windows y los bloques Bash, dentro de Ubuntu.
+3. **Instalar herramientas y clonar el curso:** seguir la guía elegida para instalar Git y JDK 21, clonar `main` y preparar Python 3.12 mediante `uv`, sin reemplazar el Python del sistema.
+4. **Crear el entorno base CPU:** mantener `.venv` en la raíz del repositorio e instalar allí los requisitos base, PQRS y notebooks; Spark se añade en su etapa. La ampliación GPU usa `.venv-gpu` según su guía independiente. No compartir ese entorno entre Windows, WSL, Linux, macOS o arquitecturas distintas.
+5. **Configurar Java y Jupyter:** establecer `JAVA_HOME`, comprobar `java -version` y `javac -version` (ambos 21), registrar el kernel y seleccionarlo en los notebooks. En macOS, verificar además que Java corresponda a ARM64 o Intel según el equipo.
+6. **Verificar antes del taller:** comprobar Python 3.12, ejecutar `python -m pip check`, realizar la prueba de Spark de la guía y abrir un notebook con el kernel del curso. Adaptar las rutas y preparar los datos según [datos y ejecución](docs/entorno.md).
+
+Al retomar el trabajo, activar `.venv` y cargar `~/.config/bigdata/entorno.sh` antes de iniciar Jupyter. Las guías incluyen los comandos completos y la solución de problemas frecuentes.
 
 ## Encuentros
 
@@ -29,11 +47,26 @@ Seguir la [guía Windows → WSL 2 → Ubuntu-26.04](docs/instalacion-wsl.md): l
 | Viernes 06/11/2026 | [Clínica de proyectos y ensayo de defensa](clases/11-clinica-de-proyectos/README.md) | 18:00–21:15 | 3 h |
 | Sábado 07/11/2026 | [Sustentación y cierre contractual](clases/12-sustentacion-y-cierre/README.md) | 08:00–16:30 | 7 h |
 
+## Guías complementarias
+
+Material de consulta y práctica para acompañar los ejercicios del curso.
+
+- [Guía de línea de comandos de Linux](docs/guia-cli-linux/README.md): se anexó como apoyo para personas con poca experiencia en la CLI de Linux. Incluye navegación, manejo de archivos, `grep`, `wc`, AWK, verificaciones rápidas y un cheat sheet de 100 comandos con sus opciones habituales. Disponible en [PDF](docs/guia-cli-linux/Guia_Linea_de_Comandos.pdf) y [HTML](docs/guia-cli-linux/index.html).
+
+- [Git y GitHub: flujo de trabajo de los ejercicios](docs/guia-git/README.md): guía ilustrada sobre clones, forks, ramas, commits, PR, trabajo compartido y resolución de conflictos. Incluye seis escenarios y un desafío integrador. La [versión HTML](docs/guia-git/index.html) puede abrirse en el navegador después de clonar o descargar el repositorio; sus imágenes están incluidas en la misma carpeta.
+- [Guía práctica de pandas](docs/manual-pandas.md): inspección, filtros, consultas y operaciones sobre los CSV del curso.
+- [Guía rápida de Polars](docs/manual-polars.md): ejemplos mínimos, equivalencias con pandas y ventajas de las expresiones y la ejecución diferida.
+- [Polars con GPU NVIDIA: instalación y ejecución CPU/GPU](docs/polars-gpu.md): **solo para equipos con GPU NVIDIA compatible en Linux o WSL 2**; requiere controlador y CUDA Toolkit compatibles. Incluye entorno GPU independiente, selección del motor y regreso a CPU. Es opcional; los talleres funcionan en CPU.
+- [Guía rápida de DuckDB](docs/manual-duckdb.md): ejemplos mínimos de SQL, comparaciones con pandas y consultas sobre archivos Parquet.
+- [Guía práctica de GeoPandas y mapas de Colombia](docs/manual-geopandas.md): departamentos, ciudades, municipios y territorios especiales; resaltado de regiones y consultas de quejas por meses y edades representadas en mapas.
+- Preparación del entorno: [Windows/WSL](docs/instalacion-wsl.md) o [Linux/macOS](docs/instalacion-linux-macos.md).
+
 ## Recursos actuales
 
+- [Ejercicios de pandas y Polars](ejercicios/README.md): PD01–PD03 (cuatro horas) y PD04–PD05 (ocho horas), con enunciados y plantillas en `ejercicios/` y entrega de los notebooks resueltos en `soluciones/`.
 - [Soluciones comentadas en Jupyter de P01, P02 y P03](soluciones/README.md).
 - [Índice completo de talleres](talleres/README.md), con descargas, tamaños y criterios.
-- [Kit base](kit/LEEME.txt), [manifesto agroambiental](kit/fuentes.json) y [manifiesto PQRS](kit/pqrs_fuentes.json).
+- [Kit base](kit/README.md), [manifesto agroambiental](kit/fuentes.json) y [manifiesto PQRS](kit/pqrs_fuentes.json).
 - [Descargador PQRS](kit/pqrs_descarga.py) y [prácticas reproducibles PQRS](kit/pqrs_talleres.py).
 - [Proyecto y evaluación por dominio](proyecto/README.md) y [mapa de ejercicios y prerrequisitos](docs/mapa-ejercicios.md).
 - [Notebooks actuales](kit/Notebooks/README.md) y [notebooks históricos Supersalud](supersalud/README.md), preservados como referencia.
@@ -46,6 +79,16 @@ Los originales agroambientales suman 136,4 MB; los tres completos PQRS, 1,816 GB
 
 ## Ruta y rama del curso
 
-El clon se realiza siempre desde `main` en `/mnt/c/Users/TUPTC/bigdata/big-data-postgraduate`. El entorno está en `.venv` de la raíz; los ejercicios se ejecutan desde `kit/`, dentro de Ubuntu-26.04 sobre WSL. Para actualizar, situarse en `main` y ejecutar `git pull --ff-only origin main` después de revisar los cambios locales.
+El clon se realiza siempre desde `main`: en Windows/WSL se usa `/mnt/c/Users/TUPTC/bigdata/big-data-postgraduate` y en Linux/macOS `~/bigdata/big-data-postgraduate`. El entorno está en `.venv` de la raíz; los scripts se ejecutan desde `kit/` en el sistema elegido. Para actualizar, situarse en `main` y ejecutar `git pull --ff-only origin main` después de revisar los cambios locales.
 
 La [revisión de rutas](docs/revision-rutas.md) detalla las ubicaciones de trabajo y el alcance de la validación.
+
+## Entregas y actividades
+
+Viernes: explicación y demostraciones guiadas por el profesor, sin entregas ni calificación. El profesor ejecuta, explica y comparte sus archivos de referencia; los estudiantes observan, preguntan y pueden seguir voluntariamente. Sábado: ejecución por los estudiantes, revisión y entrega durante la clase. La evidencia evaluable debe corresponder a su propia ejecución. No se exige una entrega ni trabajo autónomo obligatorio entre ambos encuentros.
+
+E = ejercicio general del curso (E01–E13). P = práctica con datos PQRS (P01–P04); PQRS significa peticiones, quejas, reclamos y sugerencias. El número identifica la actividad, no la sesión. T01 = taller teórico de capacidad; I01 = introducción a eventos NASA.
+
+[Fechas y cambios de las entregas](docs/entregas-sabados.md).
+
+Las actividades geoespaciales E08, E09 y E11 se desarrollan con GeoPandas, Rasterio y Matplotlib en Jupyter. Consultar los [notebooks y sus requisitos](kit/Notebooks/README.md#ejercicios-geoespaciales).
