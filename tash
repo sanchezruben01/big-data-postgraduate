@@ -1,0 +1,227 @@
+[33mcommit 17e8415bc8e896f461b1dd9acb5ab7bfdbfc99a2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev[m[33m)[m
+Merge: 44de555 2f3669d
+Author: sanchezruben01 <ruben.sanchez@uptc.edu.co>
+Date:   Sat Oct 17 16:25:22 2026 -0500
+
+    Merge branch 'main' of https://github.com/sanchezruben01/big-data-postgraduate into dev
+
+[33mcommit 44de5559a41ea7e0bcfb263fe329672e2e4f388e[m
+Merge: f9d052c 9d08f0b
+Author: sanchezruben01 <ruben.sanchez@uptc.edu.co>
+Date:   Fri Oct 16 19:02:57 2026 -0500
+
+    Merge branch 'dev' of https://github.com/sanchezruben01/big-data-postgraduate into dev
+
+[33mcommit 9d08f0b00b73f062a1a5218818cc15d6b3a5ad4f[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sun Oct 11 09:14:49 2026 -0500
+
+    docs: simplifica las comprobaciones de CUDA en la guía GPU
+
+[33mcommit 47921427c8843354a7bef27a05fe6ea2db1f66f1[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sun Oct 11 07:44:24 2026 -0500
+
+    docs: integra GeoPandas y simplifica particionamiento de sesión 2
+
+[33mcommit 1adbd76034b2979a79131ce9801169a067be5a31[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sun Oct 11 07:34:44 2026 -0500
+
+    docs: organiza ejercicios por sesiones de fin de semana
+
+[33mcommit 3218a3871bd95ebc52fb61809ad62025ec726b26[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sun Oct 11 06:33:08 2026 -0500
+
+    docs: añade ejercicios PD04 y PD05 con API directa y controles
+
+[33mcommit 216c40b297e9fa9fb112cabfe422b364479f9f62[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sun Oct 11 06:11:48 2026 -0500
+
+    docs: añade guía de GeoPandas con mapas y consultas de Colombia
+
+[33mcommit 320342e3c5ff1ad891f2f0390f5261a33ae9082c[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 19:00:45 2026 -0500
+
+    docs: enlaza guía GPU y explicita requisito NVIDIA
+
+[33mcommit ed9993ca3ff431d61c1fdd65fa5dcdda1ea0e413[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 18:43:34 2026 -0500
+
+    docs: separa instalación GPU NVIDIA y revisa entornos por plataforma
+
+[33mcommit f706c13f643814a71c6a2c852df163bb2b67e287[m
+Merge: 3ee821c 432a0e3
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 18:10:00 2026 -0500
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+[33mcommit 3ee821c75e31b3ce036185fb9accc3451151d816[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 18:09:07 2026 -0500
+
+    Prepara notebooks Spark y explicita ejercicios de rendimiento y geoespaciales
+
+[33mcommit 403154548aa2075a1b1dfdad0e7ae698c3ad48e7[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 17:52:59 2026 -0500
+
+    docs: añade guías de Polars y DuckDB comparadas con pandas
+
+[33mcommit 4e9366c4f020811eb3994ef58d404a4abf90f724[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 17:40:09 2026 -0500
+
+    docs: agregar requisitos de Polars GPU y estandarizar README
+
+[33mcommit b839059dd8d7b252991185baff44a5a5fd3e35dd[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 17:05:23 2026 -0500
+
+    docs: ampliar preparacion del ambiente y Java 21 en macOS
+
+[33mcommit 432a0e3c3085e2f44e184836ec77cd281d6828a8[m
+Merge: b04ceb9 e91c4df
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 15:23:58 2026 -0500
+
+    Otra forma de llamar el archivo .parquet
+
+[33mcommit b04ceb9f87ba3c93286402d9875b5cea2827227e[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 15:20:16 2026 -0500
+
+    Otra forma de llamar el archivo .parquet
+
+[33mcommit e91c4dfb8741798dbaa0f0288747e3ae0219fd35[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 14:04:09 2026 -0500
+
+    Explicita descarga y verificación obligatorias en talleres PQRS
+
+[33mcommit eb5da5b5d57d5f68827043f42a285c1b11a3fcb2[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 14:02:22 2026 -0500
+
+    Agrega descarga de muestras PQRS y guía de instalación Linux y macOS
+
+[33mcommit 24a23e30e9733e614158b790245a039e028d8009[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 12:40:30 2026 -0500
+
+    Explica lectura, Parquet y joins paso a paso en P02 y P03
+
+[33mcommit 0847d7349bf441409c9ff3d47e2f07263d9e7105[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 11:48:17 2026 -0500
+
+    Expone operaciones pandas paso a paso en notebooks de clase 2
+
+[33mcommit d41b0698272d0b8a7cf207f5033449c12fb5c139[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 10 10:57:01 2026 -0500
+
+    Migra ejercicios geoespaciales a GeoPandas y unifica guías del curso
+
+[33mcommit 2f3669dbc60d58192fa02e8296e8eded54105c55[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f079ab5 47b538a
+Author: Esteban Hernández <eshernan@gmail.com>
+Date:   Wed Oct 7 10:22:31 2026 -0500
+
+    Merge pull request #11 from eshernan/dev
+    
+    Añadir guía CLI de Linux para principiantes y cheat sheet
+
+[33mcommit 47b538a5a75b58fcc1be83a84622bd12a874ce7e[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Wed Oct 7 09:40:27 2026 -0500
+
+    docs: anexar guía CLI de Linux para principiantes
+
+[33mcommit f079ab53ee1f58762c80ac03968de275b2964ecd[m
+Merge: 464d1f6 4c49a81
+Author: Esteban Hernández <eshernan@gmail.com>
+Date:   Sat Oct 3 22:13:28 2026 -0500
+
+    Merge pull request #10 from eshernan/dev
+    
+    Agrega guía ilustrada de Git y guías complementarias y se son correctas y necesarias
+
+[33mcommit 4c49a81af7f56186e8e2e6cef8e1c311b0cb6ce3[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 3 22:04:23 2026 -0500
+
+    Agrega guía ilustrada de Git y sección de guías complementarias
+
+[33mcommit 464d1f6144482fd314fa1b9d7e50f05a245840e5[m
+Merge: 9331dd8 58c6240
+Author: Esteban Hernández <eshernan@gmail.com>
+Date:   Sat Oct 3 18:53:24 2026 -0500
+
+    Merge pull request #9 from eshernan/dev
+    
+    Adapta manual y ejercicios de pandas a las tres fuentes descargadas
+
+[33mcommit 58c62409c1077b1bd0636c5dbb5b0fc0a98a4252[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 3 18:51:36 2026 -0500
+
+    Explica cómo acceder a la raíz del repositorio en los ejercicios
+
+[33mcommit fe6bc1c0a9be7c429eb269d64045367de9610745[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 3 18:47:26 2026 -0500
+
+    Separa las plantillas de ejercicios de las soluciones de estudiantes
+
+[33mcommit c9a1b001e722eb2c46dd77c0abe850b57484ddd6[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 3 18:42:15 2026 -0500
+
+    Agrega tres ejercicios de pandas para una práctica de cuatro horas
+
+[33mcommit 4c1713e90fe79883b844e759ad80349f66f2c36a[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 3 18:37:20 2026 -0500
+
+    Limita la guía de pandas a DIVIPOLA EVA y AGROSAVIA
+
+[33mcommit 9331dd8e9cb17baf8727d3b73a7b7a9a12d6d793[m
+Merge: 523b585 909e986
+Author: Esteban Hernández <eshernan@gmail.com>
+Date:   Sat Oct 3 18:25:45 2026 -0500
+
+    Merge pull request #8 from eshernan/dev
+    
+    Agrega guía práctica de pandas con datos de los talleres
+
+[33mcommit 909e9863f29c4ae65b36b29246c39946b907e458[m
+Author: eshernan-cyber <esteban.hernandez@cybercolombia.org>
+Date:   Sat Oct 3 18:23:41 2026 -0500
+
+    Agrega guía práctica de pandas con datos de los talleres
+
+[33mcommit f9d052ca9a36b5a378dbb67bfaabfe1bbf080786[m
+Merge: f17e20a 803f86d
+Author: sanchezruben01 <ruben.sanchez@uptc.edu.co>
+Date:   Sat Oct 3 14:36:47 2026 -0500
+
+    Merge pull request #1 from eshernan/dev
+    
+    Agrega soluciones Jupyter para los talleres P01 P02 y P03
+
+[33mcommit 523b5855d80c4ea5819015434e581d187828b0c4[m
+Merge: 5c05f6c 8921e9c
+Author: Esteban Hernández <eshernan@gmail.com>
+Date:   Sat Oct 3 14:10:11 2026 -0500
+
+    Merge pull request #5 from eshernan/dev
+    
+    Revise y todo esta bien para integrarse
+
+[33
